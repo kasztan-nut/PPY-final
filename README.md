@@ -37,12 +37,12 @@ Once you have the calculator running, you can use it as follows:
 
 ## Challenges Faced
 
-While working on the calculator project, I encountered some specific challenges that were a result of my underestimating the complexity of a calculator.
+While working on the calculator project, I encountered some specific challenges that were a result of my underestimating the complexity of a calculator. Fortunately i was able to solve these problems. 
 These challenges included:
 
-1. **Handling Iterative Calculations**: One challenge was handling iterative calculations when the user performs consecutive operations on the same number without adding a second one. For example, when pressing "2+=", the expected result should be 4, but the used to give no output, waiting for a second number to be inputted. 
+1. **Handling Iterative Calculations**: One challenge was handling iterative calculations when the user performs consecutive operations on the same number without adding a second one. For example, when pressing "2+=", the expected result should be 4, but it used to give no output, waiting for a second number to be inputted. 
 
-2. **Handling Clearing of Information**: Another challenge was the behavior of the program when a number is pressed after obtaining a result. Currently, the information is cleared, only when another number or decimal point is pressed and the rsult is displayed unchanged. Eg. when the result is equal to 123 and the `Del` key is pressed, when another number is inputted that number is appended to the modified result. 
+2. **Handling Clearing of Information**: Another challenge was the behavior of the program when a number is pressed after obtaining a result. Currently, the information is cleared, only when another number or decimal point is pressed and the result is displayed unchanged. Eg. when the result is equal to 123 and the `Del` key is pressed, when another number is inputted that number is appended to the modified result. 
 
 3. **User Input Validation**: Validating user input to handle potential errors and unexpected scenarios presented a challenge. The calculator needed to handle cases such as division by zero, square root of negative numbers, and factorial calculations for non-integer or negative values. 
 
@@ -69,8 +69,8 @@ The `calculator.py` file contains the main calculator class, while the `help.py`
 - `root`: Tkinter root window object.
 - `entry`: Tkinter entry widget for displaying the calculator's current expression and result.
 - `expression`: A string that stores the current mathematical expression entered by the user.
-- `result`: A string that stores the result of the most recent calculation.
-- `memory`: A string that stores the value stored in memory.
+- `result`: A string that stores the evaluated expression.
+- `memory`: A string that stores the value of the memory.
 - `numbers`: A tuple of strings representing the numbers 0-9.
 - `equals_pressed`: A boolean flag indicating whether the equals button has been pressed.
 
